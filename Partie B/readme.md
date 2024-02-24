@@ -122,7 +122,11 @@ Then you have to launch the html.
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/3b016f2c-4840-47ad-be2e-24077cd27d56)
 
+We can clearly see that the pull product was created in the database
 
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/42b0fefe-9327-4947-8d7e-a16a4b06cffd)
+
+We created the same functionality for orders.
 
 
 Q6 - Simulate an issue/a stop of the API Server. What would be the result for the e-commerce user?
