@@ -112,6 +112,19 @@ Here in the order there were three items, a dress and two t-shirts. We have remo
 
 Q5 - Create a simple front-end to interact with the server. Please note that style is not the priority here. You can use tools like Bootstrap or Ant Design if you want. Just don't spend too much time on this task.
 
+This part is in the code Ex2/display.html
+
+First of all you have to launch the server using the command: 
+```javascript
+node app.js
+```
+Then you have to launch the html.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/3b016f2c-4840-47ad-be2e-24077cd27d56)
+
+
+
+
 Q6 - Simulate an issue/a stop of the API Server. What would be the result for the e-commerce user?
 
 Fix it.
