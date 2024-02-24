@@ -82,27 +82,32 @@ This product has been deleted in the MySQL database
 
 #####  POST /orders
 
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/a0357c86-4b34-4ed1-9b0c-05c6200e4f72)
 
 
 #####  GET /orders/:userId
-- **Description**: Retrieves all orders placed by a specific user, identified by a user ID.
-- **Request Body**: None.
-- **Response**: An array of orders with detailed information about each order including order ID, products ordered, quantities, total price, and status.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/da9484fe-b5e7-4fad-80de-4770c52a27ec)
+
 
 #####  POST /cart/:userId
-- **Description**: Adds a product to the user's shopping cart.
-- **Request Body**: JSON object containing the product ID and quantity.
-- **Response**: Updated contents of the cart, including product details and total price.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/d85ba51b-9ab9-4984-bdd7-dbff730bf2ac)
+
 
 #####  GET /cart/:userId
-- **Description**: Retrieves the current state of a user's shopping cart.
-- **Request Body**: None.
-- **Response**: A JSON object listing the products in the cart, their quantities, and the total price.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/70360174-709e-42a8-a49a-af4a49d70464)
+
 
 #####  DELETE /cart/:userId/item/:productId
-- **Description**: Removes a specific product from the user's shopping cart.
-- **Request Body**: None.
-- **Response**: The updated contents of the cart after removal of the specified product.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/b39db948-37f1-4106-915f-886719404a68)
+
+Here we have deleted two items and when we redisplay the order we see that they have been deleted
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/9109c433-1c4f-4c62-84db-166f56650c90)
+
 
 
 Q5 - Create a simple front-end to interact with the server. Please note that style is not the priority here. You can use tools like Bootstrap or Ant Design if you want. Just don't spend too much time on this task.
