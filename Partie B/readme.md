@@ -94,7 +94,7 @@ The provided text is mostly clear and informative, but there are some grammatica
 - **Statelessness**: Ensure the API is stateless to simplify scaling and enhance reliability. This is especially important since user authentication is not being implemented.
 
 #### Q3 
-In order to implement the different routes, we create a database with mySQL.
+In order to implement the different routes, we create a database with mySQL that we name ecommerce. Then we create these 5 tables : 
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/fca011eb-bb2b-4ee0-9fee-f3bc047f568a)
 
@@ -104,6 +104,7 @@ In order to implement the different routes, we create a database with mySQL.
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ce38a258-0e27-4f4f-aa92-94256363678b)
 
+Once these tables are created, we insert data into them.
 
 Q4 - Modify the server implementation to match API requirements.
 
