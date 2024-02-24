@@ -1,6 +1,6 @@
 # Workshop 3
 
-Marion DE SOUSA , Jules DELEUSE , Yassine 
+Marion DE SOUSA , Jules DELEUSE , Yassine BAKRIM
 
 ## Partie A
 
