@@ -13,12 +13,14 @@ We created a JavaScript file then wrote this content to create a simple hello wo
 
 #### Q2 - Create a DNS registry. This registry must be an express server that will have a getServer route. Route must repond the url of the server.
 
-For exemple if your server run on port 3001, the response of getServer must me :
-```json
-{"code":200, "server":"localhost:3001"}
-```
+On the same JS file, we create a DNS registry but this time on port 3002
 
-###  Exercice - Simple e-commerce
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/f4412f37-1fcd-487a-8cb4-2757fa8d5a23)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/3d9e7433-55ee-446f-b303-c098b62d6983)
+
+
+##  Exercice 2 - Simple e-commerce
 
 Now let's create the following e-commerce API:
 
