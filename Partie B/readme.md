@@ -96,15 +96,23 @@ The provided text is mostly clear and informative, but there are some grammatica
 #### Q3 
 In order to implement the different routes, we create a database with mySQL that we name ecommerce. Then we create these 5 tables : 
 
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/fca011eb-bb2b-4ee0-9fee-f3bc047f568a)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/6a83df25-0eff-4c42-b8a3-7f9e63e5fccf)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/79fb1b90-9bc3-4426-9670-81bd62545ce1)
 
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/098e683f-6538-4b6d-8639-5995b8765fa3)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/e7117088-33e9-4fe2-8c5c-be4c29a572a1)
 
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/8f4f471e-3086-4b69-8e34-5981bf165f96)
+Once these tables are created, we insert data into them :
 
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ce38a258-0e27-4f4f-aa92-94256363678b)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/62470ff3-4ada-4800-897f-e9b442c0d6d9)
 
-Once these tables are created, we insert data into them.
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/dc22ee09-6757-4bec-bb03-cd196f5b7d47)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/1e617b30-2455-473a-9ed7-e2c978dcd911)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ecb190bd-0883-4633-baef-e44595f5a571)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/07ba1300-1e47-40fe-9d41-9bb40143f492)
+
 
 Q4 - Modify the server implementation to match API requirements.
 
