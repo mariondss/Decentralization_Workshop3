@@ -22,11 +22,28 @@ On the same JS file, we create a DNS registry but this time on port 3002
 
 ##  Exercice 2 - Simple e-commerce
 
-Now let's create the following e-commerce API:
+#### Q3 
+In order to implement the different routes, we create a database with mySQL that we name ecommerce. Then we create these 5 tables : 
 
-**Note:** Removing the registration and login routes simplifies the workshop by focusing on the core functionalities of product and order management in the e-commerce platform. Below is the revised "cahier des charges" for the different routes, excluding user registration and login functionalities:
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/6a83df25-0eff-4c42-b8a3-7f9e63e5fccf)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/79fb1b90-9bc3-4426-9670-81bd62545ce1)
 
-####  1. Products Routes
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/e7117088-33e9-4fe2-8c5c-be4c29a572a1)
+
+Once these tables are created, we insert data into them :
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/62470ff3-4ada-4800-897f-e9b442c0d6d9)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/dc22ee09-6757-4bec-bb03-cd196f5b7d47)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/1e617b30-2455-473a-9ed7-e2c978dcd911)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ecb190bd-0883-4633-baef-e44595f5a571)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/07ba1300-1e47-40fe-9d41-9bb40143f492)
+
+
+#### Q4 - Modify the server implementation to match API requirements.
 
 #####  GET /products
 - **Description**: Retrieves a list of all products available in the store.
@@ -54,8 +71,6 @@ Now let's create the following e-commerce API:
 - **Request Body**: None.
 - **Response**: A confirmation message indicating successful deletion of the product.
 
-####  2. Orders Routes
-
 #####  POST /orders
 - **Description**: Creates a new order with selected products.
 - **Request Body**: JSON object containing an array of product IDs and their quantities, and optionally, user information if the system tracks orders per user without authentication.
@@ -65,8 +80,6 @@ Now let's create the following e-commerce API:
 - **Description**: Retrieves all orders placed by a specific user, identified by a user ID.
 - **Request Body**: None.
 - **Response**: An array of orders with detailed information about each order including order ID, products ordered, quantities, total price, and status.
-
-####  3. Cart Routes
 
 #####  POST /cart/:userId
 - **Description**: Adds a product to the user's shopping cart.
@@ -83,38 +96,6 @@ Now let's create the following e-commerce API:
 - **Request Body**: None.
 - **Response**: The updated contents of the cart after removal of the specified product.
 
-The provided text is mostly clear and informative, but there are some grammatical and spelling errors, as well as a few areas that could benefit from clarification or minor adjustments for accuracy and coherence. Here's a corrected version:
-
----
-
-#### General Considerations
-
-- **Validation and Error Handling**: Implement validation for all inputs to ensure data integrity and provide meaningful error messages for any incorrect inputs or operations that cannot be completed.
-- **Data Format**: All responses should be in JSON format for easy parsing and integration with frontend systems.
-- **Statelessness**: Ensure the API is stateless to simplify scaling and enhance reliability. This is especially important since user authentication is not being implemented.
-
-#### Q3 
-In order to implement the different routes, we create a database with mySQL that we name ecommerce. Then we create these 5 tables : 
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/6a83df25-0eff-4c42-b8a3-7f9e63e5fccf)
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/79fb1b90-9bc3-4426-9670-81bd62545ce1)
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/e7117088-33e9-4fe2-8c5c-be4c29a572a1)
-
-Once these tables are created, we insert data into them :
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/62470ff3-4ada-4800-897f-e9b442c0d6d9)
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/dc22ee09-6757-4bec-bb03-cd196f5b7d47)
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/1e617b30-2455-473a-9ed7-e2c978dcd911)
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ecb190bd-0883-4633-baef-e44595f5a571)
-
-![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/07ba1300-1e47-40fe-9d41-9bb40143f492)
-
-
-Q4 - Modify the server implementation to match API requirements.
 
 Q5 - Create a simple front-end to interact with the server. Please note that style is not the priority here. You can use tools like Bootstrap or Ant Design if you want. Just don't spend too much time on this task.
 
