@@ -93,7 +93,17 @@ The provided text is mostly clear and informative, but there are some grammatica
 - **Data Format**: All responses should be in JSON format for easy parsing and integration with frontend systems.
 - **Statelessness**: Ensure the API is stateless to simplify scaling and enhance reliability. This is especially important since user authentication is not being implemented.
 
-Q3 - In order to implement the different routes, create a database to store the various fields. You can choose from: JSON-based DB, SQL, PostgreSQL, MongoDB, etc. Please note that this workshop will involve 2 different implementations, so use tools that you are comfortable using.
+#### Q3 
+In order to implement the different routes, we create a database with mySQL.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/fca011eb-bb2b-4ee0-9fee-f3bc047f568a)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/098e683f-6538-4b6d-8639-5995b8765fa3)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/8f4f471e-3086-4b69-8e34-5981bf165f96)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/ce38a258-0e27-4f4f-aa92-94256363678b)
+
 
 Q4 - Modify the server implementation to match API requirements.
 
