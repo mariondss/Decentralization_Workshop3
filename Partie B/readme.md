@@ -104,7 +104,7 @@ This product has been deleted in the MySQL database
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/b39db948-37f1-4106-915f-886719404a68)
 
-Here we have deleted two items and when we redisplay the order we see that they have been deleted
+Here in the order there were three items, a dress and two t-shirts. We have removed the two items with id 4 (t-shirt). When we redisplay the command we see that they have been deleted.
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/9109c433-1c4f-4c62-84db-166f56650c90)
 
