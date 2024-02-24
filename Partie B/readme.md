@@ -22,77 +22,6 @@ On the same JS file, we create a DNS registry but this time on port 3002
 
 ##  Exercice 2 - Simple e-commerce
 
-Now let's create the following e-commerce API:
-
-**Note:** Removing the registration and login routes simplifies the workshop by focusing on the core functionalities of product and order management in the e-commerce platform. Below is the revised "cahier des charges" for the different routes, excluding user registration and login functionalities:
-
-####  1. Products Routes
-
-#####  GET /products
-- **Description**: Retrieves a list of all products available in the store.
-- **Request Body**: None.
-- **Query Parameters**: Optional filters such as `category` to filter products by their category, and `inStock` to filter products based on their stock availability.
-- **Response**: A JSON array of products, each containing details like name, description, price, and stock status.
-
-#####  GET /products/:id
-- **Description**: Fetches detailed information about a specific product identified by its ID.
-- **Request Body**: None.
-- **Response**: A JSON object containing detailed information of the product, including name, description, price, category, and stock status.
-
-#####  POST /products
-- **Description**: Adds a new product to the store.
-- **Request Body**: JSON object containing product information such as name, description, price, category, and stock status.
-- **Response**: A JSON object of the created product, including all details provided plus a unique identifier for the product.
-
-#####  PUT /products/:id
-- **Description**: Updates the details of an existing product.
-- **Request Body**: JSON object with the product's updated information. Only fields to be updated need to be included.
-- **Response**: The updated product details as a JSON object.
-
-#####  DELETE /products/:id
-- **Description**: Removes a product from the store by its ID.
-- **Request Body**: None.
-- **Response**: A confirmation message indicating successful deletion of the product.
-
-####  2. Orders Routes
-
-#####  POST /orders
-- **Description**: Creates a new order with selected products.
-- **Request Body**: JSON object containing an array of product IDs and their quantities, and optionally, user information if the system tracks orders per user without authentication.
-- **Response**: Detailed information of the created order, including a unique order ID, list of products ordered with quantities, total price, and order status.
-
-#####  GET /orders/:userId
-- **Description**: Retrieves all orders placed by a specific user, identified by a user ID.
-- **Request Body**: None.
-- **Response**: An array of orders with detailed information about each order including order ID, products ordered, quantities, total price, and status.
-
-####  3. Cart Routes
-
-#####  POST /cart/:userId
-- **Description**: Adds a product to the user's shopping cart.
-- **Request Body**: JSON object containing the product ID and quantity.
-- **Response**: Updated contents of the cart, including product details and total price.
-
-#####  GET /cart/:userId
-- **Description**: Retrieves the current state of a user's shopping cart.
-- **Request Body**: None.
-- **Response**: A JSON object listing the products in the cart, their quantities, and the total price.
-
-#####  DELETE /cart/:userId/item/:productId
-- **Description**: Removes a specific product from the user's shopping cart.
-- **Request Body**: None.
-- **Response**: The updated contents of the cart after removal of the specified product.
-
-The provided text is mostly clear and informative, but there are some grammatical and spelling errors, as well as a few areas that could benefit from clarification or minor adjustments for accuracy and coherence. Here's a corrected version:
-
----
-
-#### General Considerations
-
-- **Validation and Error Handling**: Implement validation for all inputs to ensure data integrity and provide meaningful error messages for any incorrect inputs or operations that cannot be completed.
-- **Data Format**: All responses should be in JSON format for easy parsing and integration with frontend systems.
-- **Statelessness**: Ensure the API is stateless to simplify scaling and enhance reliability. This is especially important since user authentication is not being implemented.
-
 #### Q3 
 In order to implement the different routes, we create a database with mySQL that we name ecommerce. Then we create these 5 tables : 
 
@@ -114,7 +43,72 @@ Once these tables are created, we insert data into them :
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/07ba1300-1e47-40fe-9d41-9bb40143f492)
 
 
-Q4 - Modify the server implementation to match API requirements.
+#### Q4 - Modify the server implementation to match API requirements.
+
+The code corresponding to this part is in Ex2/app.js
+
+#####  GET /products
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/60805f25-3272-401e-a292-244dd9df6d0d)
+
+
+#####  GET /products/:id
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/9a22c2bd-e508-4d97-8bcd-a772b2c32fff)
+
+
+#####  POST /products
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/271e5372-4951-4520-a73f-ff24d5c1270c)
+
+
+#####  PUT /products/:id
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/d8ecc14e-906f-403d-973b-487453b09aa0)
+
+This product has been added to the MySQL database
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/0e4824a9-4b2d-4d5d-bbe3-6fa1302d9be2)
+
+
+#####  DELETE /products/:id
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/7a4e9cf0-f3a4-4622-a8c8-37d72d23d4c2)
+
+This product has been deleted in the MySQL database
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/88621f6e-3fa1-46a8-9dfc-67a6dc6f602b)
+
+
+#####  POST /orders
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/a0357c86-4b34-4ed1-9b0c-05c6200e4f72)
+
+
+#####  GET /orders/:userId
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/da9484fe-b5e7-4fad-80de-4770c52a27ec)
+
+
+#####  POST /cart/:userId
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/d85ba51b-9ab9-4984-bdd7-dbff730bf2ac)
+
+
+#####  GET /cart/:userId
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/70360174-709e-42a8-a49a-af4a49d70464)
+
+
+#####  DELETE /cart/:userId/item/:productId
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/b39db948-37f1-4106-915f-886719404a68)
+
+Here in the order there were three items, a dress and two t-shirts. We have removed the two items with id 4 (t-shirt). When we redisplay the command we see that they have been deleted.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/9109c433-1c4f-4c62-84db-166f56650c90)
+
+
 
 Q5 - Create a simple front-end to interact with the server. Please note that style is not the priority here. You can use tools like Bootstrap or Ant Design if you want. Just don't spend too much time on this task.
 
