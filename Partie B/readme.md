@@ -61,13 +61,12 @@ The code corresponding to this part is in Ex2/app.js
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/271e5372-4951-4520-a73f-ff24d5c1270c)
 
-This product has been added to the MySQL database
-
-
 
 #####  PUT /products/:id
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/d8ecc14e-906f-403d-973b-487453b09aa0)
+
+This product has been added to the MySQL database
 
 ![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/0e4824a9-4b2d-4d5d-bbe3-6fa1302d9be2)
 
