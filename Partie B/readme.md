@@ -45,36 +45,45 @@ Once these tables are created, we insert data into them :
 
 #### Q4 - Modify the server implementation to match API requirements.
 
+The code corresponding to this part is in Ex2/app.js
+
 #####  GET /products
-- **Description**: Retrieves a list of all products available in the store.
-- **Request Body**: None.
-- **Query Parameters**: Optional filters such as `category` to filter products by their category, and `inStock` to filter products based on their stock availability.
-- **Response**: A JSON array of products, each containing details like name, description, price, and stock status.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/60805f25-3272-401e-a292-244dd9df6d0d)
+
 
 #####  GET /products/:id
-- **Description**: Fetches detailed information about a specific product identified by its ID.
-- **Request Body**: None.
-- **Response**: A JSON object containing detailed information of the product, including name, description, price, category, and stock status.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/9a22c2bd-e508-4d97-8bcd-a772b2c32fff)
+
 
 #####  POST /products
-- **Description**: Adds a new product to the store.
-- **Request Body**: JSON object containing product information such as name, description, price, category, and stock status.
-- **Response**: A JSON object of the created product, including all details provided plus a unique identifier for the product.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/271e5372-4951-4520-a73f-ff24d5c1270c)
+
+This product has been added to the MySQL database
+
+
 
 #####  PUT /products/:id
-- **Description**: Updates the details of an existing product.
-- **Request Body**: JSON object with the product's updated information. Only fields to be updated need to be included.
-- **Response**: The updated product details as a JSON object.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/d8ecc14e-906f-403d-973b-487453b09aa0)
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/0e4824a9-4b2d-4d5d-bbe3-6fa1302d9be2)
+
 
 #####  DELETE /products/:id
-- **Description**: Removes a product from the store by its ID.
-- **Request Body**: None.
-- **Response**: A confirmation message indicating successful deletion of the product.
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/7a4e9cf0-f3a4-4622-a8c8-37d72d23d4c2)
+
+This product has been deleted in the MySQL database
+
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/114142047/88621f6e-3fa1-46a8-9dfc-67a6dc6f602b)
+
 
 #####  POST /orders
-- **Description**: Creates a new order with selected products.
-- **Request Body**: JSON object containing an array of product IDs and their quantities, and optionally, user information if the system tracks orders per user without authentication.
-- **Response**: Detailed information of the created order, including a unique order ID, list of products ordered with quantities, total price, and order status.
+
+
 
 #####  GET /orders/:userId
 - **Description**: Retrieves all orders placed by a specific user, identified by a user ID.
