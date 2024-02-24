@@ -13,7 +13,7 @@ Prerequisites
 
 You can install the necessary libraries using pip:
 
-sh
+
 
 pip install Flask scikit-learn requests
 
@@ -25,7 +25,7 @@ Each Flask app serves predictions from a different model. You'll need to start e
 
     Navigate to the directory containing the KNN app script (knn_app.py) and run:
 
-    sh
+    
 
 python knn_app.py
 
@@ -35,7 +35,7 @@ Random Forest Flask App:
 
 Navigate to the directory containing the Random Forest app script (random_forest_app.py) and run:
 
-sh
+
 
 python random_forest_app.py
 
@@ -45,7 +45,7 @@ SVM Flask App:
 
 Navigate to the directory containing the SVM app script (svm_app.py) and run:
 
-sh
+
 
     python svm_app.py
 
@@ -57,7 +57,7 @@ The aggregation script (aggregate_predictions.py) prompts you for the feature va
 
 Run the aggregation script in a separate terminal:
 
-sh
+
 
 python aggregate_predictions.py
 
@@ -68,16 +68,20 @@ After starting the Flask apps, run the aggregation script. You'll be prompted to
 
 Enter the feature values one by one:
 
-sh
 
+```
 Enter the value of feature 1: 5.1
+
 Enter the value of feature 2: 3.5
+
 Enter the value of feature 3: 1.4
+
 Enter the value of feature 4: 0.2
+```
 
 Next, enter the URLs of the Flask apps when prompted:
 
-sh
+
 
 Enter the base URL for the KNN model: http://localhost:5000
 Enter the base URL for the RandForest model: http://localhost:5001
