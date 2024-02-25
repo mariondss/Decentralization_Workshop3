@@ -137,6 +137,12 @@ Fix it.
     Modify the DNS.
 </details>
 
+To simulate an issue, we can stop the server. We can see that the server is no longer running.
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/82099171/9adf8e8b-1bc9-49ee-b0ca-4ab9174b2857)
+![image](https://github.com/mariondss/Decentralization_Workshop3/assets/82099171/ff2a679e-d2eb-4c6f-9ace-043ef61d8264)
+
+
+
 Now imagine the e-commerce does 1000 orders/day, and the same inaccessibility occurs, but now not on the server but on the database. Let's imagine that your database is near a river and there is a flood, or there is a fire at our database data center. It will be painful, right? Let's see how to prevent this kind of issue.
 
 #### Synchronous Mirroring
